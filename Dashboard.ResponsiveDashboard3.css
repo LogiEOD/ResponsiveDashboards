@@ -1,0 +1,31 @@
+@media (max-width: 900px){
+	
+	#rdDashboardPanelTable > tbody, 
+	#rdDashboardPanelTable > tbody > tr, 
+	#rdDashboardPanelTable > tbody > tr > td
+	{
+		display: block;
+		border-collapse: collapse !important;
+		border: 1px;
+	}
+	
+	#rdDashboardPanelTable > tbody > tr > td,
+	.rdDashboardColumn > table > tbody > tr > td
+	{ 
+		/* Behave  like a "row" */
+		border: none !important;
+		position: relative;
+	    width: 100% !important;
+		min-width: 100% !important;
+	}
+}	
+/* Fixes scroll bar on dashboards at 100% scren width */
+ 	.rdDashboardControl {
+    	width: 82px;
+        min-width: 82px;
+     }
+
+	#rdDashboardPanelTable {
+		overflow: hidden;
+		padding: 2px;
+	}

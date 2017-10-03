@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="SampleDashboard">
+  <StyleSheet StyleSheet="Dashboard.ResponsiveDashboard3.css" />
+  <StyleSheet ShowModes="rdExport" StyleSheet="Dashboard.PDFExport.css" />
+  <LocalData>
+    <DataLayer Type="Static">
+      <StaticDataRow Date="@Function.DateTime~" />
+      <DataLayerLink ID="dllinked" />
+    </DataLayer>
+  </LocalData>
+  <PrintablePaging PdfAutoFit="True" />
+  <Body>
+    <Division HtmlDiv="True" ID="divExportButton" ShowModes="rdBrowser">
+      <Image Caption="Images.PDF.png" Class="positionPDF" Height="25" ID="imgPDF" Tooltip="Export to PDF">
+        <Action ID="actPDF" Type="PDF">
+          <Target FrameID="NewWindow" RequestForwarding="True" Type="PDF" />
+          <LinkParams rdShowWait="True" />
+        </Action>
+      </Image>
+    </Division>
+    <Dashboard2 AllowFreeformLayout="False" DashboardColumns="3" DashboardTabs="True" ID="dash1" SaveFile="@Function.AppDownloadPath~\test.xml">
+      <Panel Caption="Panel1" ID="pnl1">
+        <PanelContent>
+          <DataTable ID="dt1">
+            <AutoColumns />
+            <DataLayer LinkedDataLayerID="dllinked" Type="Linked" />
+          </DataTable>
+        </PanelContent>
+      </Panel>
+      <Panel Caption="Panel2" ID="pnl2">
+        <PanelContent>
+          <DataTable ID="dt2">
+            <AutoColumns />
+            <DataLayer LinkedDataLayerID="dllinked" Type="Linked" />
+          </DataTable>
+        </PanelContent>
+      </Panel>
+      <Panel Caption="Panel3" ID="pnl3">
+        <PanelContent>
+          <DataTable ID="dt3">
+            <AutoColumns />
+            <DataLayer LinkedDataLayerID="dllinked" Type="Linked" />
+          </DataTable>
+        </PanelContent>
+      </Panel>
+      <Panel Caption="Panel4" ID="pnl4">
+        <PanelContent>
+          <DataTable ID="dt4">
+            <AutoColumns />
+            <DataLayer LinkedDataLayerID="dllinked" Type="Linked" />
+          </DataTable>
+        </PanelContent>
+      </Panel>
+    </Dashboard2>
+  </Body>
+  <ideTestParams />
+</Report>

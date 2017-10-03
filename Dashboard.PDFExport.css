@@ -1,0 +1,63 @@
+body, #rdDashboardPanelTable, #rdDivDashboardPanelTable, .rdDashboardDropZone, .rdDashboardContent{
+    background-color: #ffffff !important
+}
+
+#rdDashboardMenu {
+	display: none;
+}
+
+#rdDashboardControl {
+	display: none;
+}
+
+
+iframe, div, table, tr, td, th, thead, tbody, #rdDashboardPanel, .PanelInnerTable, body, html #rdDashboardPanelTable, #rdDivDashboardPanelTable, .rdDashboardDropZone, .rdDashboardContent{
+	box-shadow: none !important;
+	border-collapse: collapse !important;
+
+
+}
+
+.rdDashboardPanel {
+    padding: 2px !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; 
+    border-radius: 0px  !important;
+}
+
+td.rdDashboard {
+	background-color: #ffffff !important;
+}
+
+#rdDashboardPanelTable, #rdDivDashboardPanelTable, .rdDashboardDropZone {
+	background-color: #ffffff !important;
+}
+.rdDashboardPanel {
+    border-style: solid;
+    border-color: #fff !important;
+    border-width: 1px !important;;
+    background-color: white;
+    font-weight: normal;
+    /* overflow: hidden; */
+}
+
+.panelInnerTable {
+	page-break-inside: avoid !important;
+}
+
+#rdTabs li:not(.selected) {
+	display: none;
+	visibility: hidden;
+}
+
+#rdTabs li {
+	width: 100%;
+	background-color: Transparent;
+	text-align: center;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+
+
